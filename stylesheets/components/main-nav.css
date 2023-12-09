@@ -1,1 +1,13 @@
-/* Your code here */
+.mainnav li {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.mainnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+  align-items: center;
+  margin: 10px 0;
+}

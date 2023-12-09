@@ -1,1 +1,75 @@
-/* Your code here */
+.interestcontainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+  grid-template-rows: 150px;
+
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.interestcontainer__pettext,
+.interestcontainer__stonks {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.interestcontainer__stonks {
+  justify-content: center;
+  align-items: center;
+}
+
+.interestcontainer__stonks ul {
+  width: 80%;
+}
+
+.interestcontainer__stonks li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.interestcontainer__pettext::after,
+.interestcontainer__stonks::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 100%;
+  border-right: 2px solid #e2e2e2;
+}
+
+.interestcontainer__pettext span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.interestcontainer__imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.interestcontainer img {
+  max-width: 60%;
+}
+
+.pettitle {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.stonk {
+  font-weight: bold;
+  color: rgb(2, 224, 50);
+}
